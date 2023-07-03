@@ -45,7 +45,7 @@
 // }
 
 // --- do not touch  ↓↓↓↓↓↓↓↓↓↓↓↓ ----------
-const baseServerURL = `http://localhost:3000`;
+const baseServerURL = `https://clear-blazer-slug.cyclic.app`;
 // --- do not touch  ↑↑↑↑↑↑↑↑↑↑↑↑ ----------
 
 // ***** Constants / Variables ***** //
@@ -89,7 +89,7 @@ let searchByButton = document.getElementById("search-by-button");
 
 let arr = [];
 function get_Data() {
-  fetch(`http://localhost:3000/pitches`)
+  fetch(pitchURL)
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
